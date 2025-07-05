@@ -20,9 +20,9 @@ CREATE TABLE IF NOT EXISTS Books (
 -- Create the 'customers' table
 CREATE TABLE IF NOT EXISTS Customers (
     customer_id INT PRIMARY KEY AUTO_INCREMENT,
-    customer_name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    address VARCHAR(255)
+    customer_name VARCHAR(215) NOT NULL,
+    email VARCHAR(215) NOT NULL UNIQUE,
+    address TEXT
 );
 
 -- Create the 'orders' table
