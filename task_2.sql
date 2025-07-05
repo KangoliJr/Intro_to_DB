@@ -4,7 +4,7 @@ USE alx_book_store;
 -- Create the 'authors' table
 CREATE TABLE IF NOT EXISTS authors (
     author_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL
+    author_name VARCHAR(255) NOT NULL
 );
 
 -- Create the 'books' table
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS books (
 -- Create the 'customers' table
 CREATE TABLE IF NOT EXISTS customers (
     customer_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
+    customer_name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
     address VARCHAR(255)
 );
