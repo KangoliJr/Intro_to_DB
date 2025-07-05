@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS Order_details (
     order_detail_id INT PRIMARY KEY AUTO_INCREMENT,
     order_id INT NOT NULL,
     book_id INT NOT NULL,
-    quantity INT NOT NULL DEFAULT 1,
+    quantity DOUBLE INT NOT NULL DEFAULT 1,
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id),
     CONSTRAINT CHK_Quantity CHECK (quantity > 0)
